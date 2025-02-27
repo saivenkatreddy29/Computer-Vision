@@ -10,7 +10,7 @@ def process_image(img,face_detection):
     H,W,_ = img.shape
     img_rgb = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
     out = face_detection.process(img_rgb)
-    print(out.detections)
+    
 
 args = argparse.ArgumentParser()
 args.add_argument('--mode',default = 'image')
